@@ -4,6 +4,17 @@ import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
 
+const user = {
+  name: "じゃけぇ",
+  image: "https://source.unsplash.com/LATYeZyw88c",
+  email: "1111@dddd.com",
+  phone: "0123-456-7890",
+  company: {
+    name: "ああああ株式会社"
+  },
+  website: "https://ys-pps.com"
+};
+
 export default function App() {
   return (
     <div className="App">
@@ -11,7 +22,7 @@ export default function App() {
       <SecondaryButton>検索</SecondaryButton>
       <br />
       <SearchInput />
-      <UserCard />
+      <UserCard user={user} />
     </div>
   );
 }
