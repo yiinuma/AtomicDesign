@@ -3,9 +3,7 @@ import { DefaultLayout } from "../templates/DefaultLayout";
 export const Top = () => {
   return (
     <SContainer>
-      <DefaultLayout>
-        <h2>トップページです</h2>
-      </DefaultLayout>
+      <h2>トップページです</h2>
     </SContainer>
   );
 };
