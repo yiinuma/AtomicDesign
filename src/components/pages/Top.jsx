@@ -1,8 +1,8 @@
+import React, { useContext } from "react";
 import styled from "styled-components";
-import { SecondaryButton } from "../atoms/button/SecondaryButton";
 import { useHistory } from "react-router-dom";
-import { useContext } from "react";
-import { UserContext } from "../../providers/UserProvideer";
+import { UserContext } from "../../providers/UserProvider";
+import { SecondaryButton } from "../atoms/button/SecondaryButton";
 export const Top = () => {
   const history = useHistory();
   const { setUserInfo } = useContext(UserContext);
